@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partial/header.ejs') %>
+    <link rel="stylesheet" href="css/style.css">
+    <title>LOGIN ADMIN PAGE</title>
+</head>
+<body>
+    <div class="main-screen d-flex align-items-center">
+        <div class="box mx-auto">
+            <h2 class="login text-center mt-4">LOGIN</h2>
+            <form class="text-center form-login" action="/" method="post">
+                <label for="username"></label>
+                <input type="text" placeholder="Enter Username" name="username" id="username" required>
+                <br><br>
+                <label for="password"></label>
+                <input type="password" placeholder="Enter Password" name="password" id="password" required>
+                <br><br>
+                <button type="submit" class="registerbtn">Login</button>
+            </form>  
+        </div>
+    </div>
+</body>
+</html>

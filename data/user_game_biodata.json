@@ -1,0 +1,20 @@
+[
+    {
+        "first_name": "Kiki",
+        "last_name": "Aulia",
+        "birth_date": "1995-12-03",
+        "gender": "male"
+    },
+    {
+        "first_name": "Andra",
+        "last_name": "Ahmad",
+        "birth_date": "1996-05-11",
+        "gender": "male"
+    },
+    {
+        "first_name": "Alya",
+        "last_name": "Qonita",
+        "birth_date": "1998-01-10",
+        "gender": "female"
+    }
+]

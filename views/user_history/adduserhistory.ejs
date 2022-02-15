@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partial/header.ejs') %>
+    <title>ADD USER HISTORICAL DATA</title>
+</head>
+<body>
+    <div class="main-screen">
+        <h1 class="text-center mt-3">ADDING USER HISTORICAL DATA</h1>
+        <div class="text-center mx-auto mt-5">
+        <form action="/historicaldata/add" method="POST">
+            <div>
+            <label for="total_win">Total Win</label><br />
+            <input
+                type="number"
+                name="total_win"
+            /><br /><br />
+            </div>
+            <div>
+            <label for="total_lose">Total Lose</label><br />
+            <input
+                type="number"
+                name="total_lose"
+            /><br /><br />
+            </div>
+            <div>
+            <label for="total_loggedin">Total Loggedin</label><br />
+            <input 
+                type="number" 
+                name="total_loggedin" 
+            /><br /><br />
+            </div>
+            <div>
+            <label for="total_plays">Total Plays</label><br />
+            <input 
+                type="number" 
+                name="total_plays" 
+            /><br /><br />
+            </div>
+            <br /><br />
+            <div>
+            <input type="submit"/>
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

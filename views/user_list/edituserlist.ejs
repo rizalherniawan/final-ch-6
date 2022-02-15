@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partial/header.ejs') %>
+    <title>EDIT USER LIST</title>
+</head>
+<body>
+    <div class="main-screen">
+        <h1 class="text-center mt-3">EDIT USER LIST</h1>
+        <div class="text-center mx-auto mt-5">
+        <form action="/userlist/edit/<%= data.id %>" method="POST">
+            <div>
+            <label for="username">User Name</label><br />
+            <input
+                type="text"
+                name="username"
+                value= <%= data.username %>
+            /><br /><br />
+            </div>
+            <div>
+            <label for="password">Password</label><br />
+            <input
+                type="text"
+                name="password"
+                value= <%= data.password %>
+            /><br /><br />
+            </div>
+            <div>
+            <label for="email">Email</label><br />
+            <input 
+                type="email" 
+                name="email" 
+                value= <%= data.email %>
+            /><br /><br />
+            </div>
+            <br /><br />
+            <div>
+            <input type="submit"/>
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+[
+    {
+        "total_win":10,
+        "total_lose":6,
+        "total_loggedin":20,
+        "total_plays":16
+    },
+
+    {
+        "total_win":15,
+        "total_lose":7,
+        "total_loggedin":30,
+        "total_plays":22
+    },
+
+    {
+        "total_win":5,
+        "total_lose":1,
+        "total_loggedin":8,
+        "total_plays":6
+    }
+]

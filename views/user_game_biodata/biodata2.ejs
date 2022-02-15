@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partial/header.ejs') %>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>USER BIODATA</title>
+  </head>
+  <div class="main-screen">
+    <nav class="navbar"></nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2 column1">
+          <h3><a class="options" href="/userlist">user</a></h3>
+          <h3><a class="options" href="/biodata">biodata</a></h3>
+          <h3><a class="options" href="/historicaldata">history</a></h3>
+        </div>
+        <div class="col-10 column2 text-center">
+          <h2 class="mt-3">BIODATA</h2>
+          <table class="table table- table-striped w-75 mx-auto">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Birth Date</th>
+                <th scope="col">Gender</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% for (let i = 0; i < data.length; i++){ %>
+              <tr>
+                <td><%= data[i].id %></td>
+                <td><%= data[i].first_name %></td>
+                <td><%= data[i].last_name %></td>
+                <td><%= data[i].birth_date %></td>
+                <td><%= data[i].gender %></td>
+                <td>
+                  <a href='/biodata/edit/<%= data[i].id %>'>Edit</a> |
+                  <a href='/biodata/delete/<%= data[i].id %>'>Delete</a>
+                </td>
+              </tr>
+              <% } %>
+            </tbody>
+          </table>
+          <a href="/biodata/add"><button type="button" class="btn btn-dark btn-lg">ADD DATA</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>

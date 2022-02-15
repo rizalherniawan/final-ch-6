@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partial/header.ejs') %>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>USER LIST</title>
+  </head>
+  <div class="main-screen">
+    <nav class="navbar"></nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2 column1">
+          <h3><a class="options" href="/userlist">user</a></h3>
+          <h3><a class="options" href="/biodata">biodata</a></h3>
+          <h3><a class="options" href="/historicaldata">history</a></h3>
+        </div>
+        <div class="col-10 column2 text-center">
+          <h2 class="mt-3">USER</h2>
+          <table class="table table- table-striped w-75 mx-auto">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">USER NAME</th>
+                <th scope="col">PASSWORD</th>
+                <th scope="col">EMAIL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% for (let i = 0; i < data.length; i++){ %>
+              <tr>
+                <td><%= data[i].id %></td>
+                <td><%= data[i].username %></td>
+                <td><%= data[i].password %></td>
+                <td><%= data[i].email %></td>
+                <td>
+                  <a href='/userlist/edit/<%= data[i].id %>'>Edit</a> |
+                  <a href='/userlist/delete/<%= data[i].id %>'>Delete</a>
+                </td>
+              </tr>
+              <% } %>
+            </tbody>
+          </table>
+          <a href="/userlist/add"><button type="button" class="btn btn-dark btn-lg">ADD DATA</button></a>
+        </div> 
+      </div>
+    </div>
+  </div>
+</html>

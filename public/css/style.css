@@ -1,0 +1,50 @@
+.navbar{
+    background: #5A5656;
+    height: 67px;
+}
+
+.column1{
+    background: #212429;
+    height: 1045px;
+}
+
+.column2{
+    background: #C4C4C4;
+    height: 1045px;
+}
+
+h3{
+    color: white;
+    size: 36px;
+    margin-top: 36px;
+    margin-left: 26px;
+}
+
+.options{
+    color: white;
+    text-decoration: none;
+}
+
+.options:hover{
+    color: #FAFF00;
+    text-decoration: none;
+}
+
+.main-screen{
+    background: #C4C4C4;
+    height: 800px;
+}
+
+.box{
+    background: black;
+    width: 500px;
+    height: 400px;
+}
+
+.login{
+    color: white;
+}
+
+.form-login{
+    margin-top: 75px;
+}
